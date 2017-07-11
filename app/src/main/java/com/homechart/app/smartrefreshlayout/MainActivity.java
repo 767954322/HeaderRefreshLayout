@@ -9,6 +9,7 @@ import android.view.View;
 import com.homechart.app.smartrefreshlayout.type.FiveActivity;
 import com.homechart.app.smartrefreshlayout.type.FourActivity;
 import com.homechart.app.smartrefreshlayout.type.OneActivity;
+import com.homechart.app.smartrefreshlayout.type.SevenActivity;
 import com.homechart.app.smartrefreshlayout.type.SixActivity;
 import com.homechart.app.smartrefreshlayout.type.ThreeActivity;
 import com.homechart.app.smartrefreshlayout.type.TwoActivity;
@@ -71,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(MainActivity.this, SixActivity.class);
+                startActivity(intent1);
+            }
+        });
+        findViewById(R.id.bt_seven).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, SevenActivity.class);
                 startActivity(intent1);
             }
         });

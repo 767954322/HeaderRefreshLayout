@@ -49,6 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bt_five"
             android:text="第六种" />
+        <Button
+            android:id="@+id/bt_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_six"
+            android:text="第七种" />
 
 
     </RelativeLayout>
