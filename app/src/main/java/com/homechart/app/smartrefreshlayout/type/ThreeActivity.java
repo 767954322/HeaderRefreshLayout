@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.homechart.app.smartrefreshlayout.R;
+import com.scwang.smartrefresh.header.CircleHeader;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
@@ -26,6 +27,8 @@ public class ThreeActivity
         setContentView(R.layout.activity_three);
 
         refreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
+        CircleHeader circleHeader = new CircleHeader(this);
+        refreshLayout.setRefreshHeader(circleHeader);
         refreshLayout.setOnRefreshListener(this);
         refreshLayout.setOnLoadmoreListener(this);
     }
