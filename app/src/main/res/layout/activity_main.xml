@@ -55,6 +55,25 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bt_six"
             android:text="第七种" />
+        <Button
+            android:id="@+id/bt_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_seven"
+            android:text="第八种" />
+
+     <Button
+            android:id="@+id/bt_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_eight"
+            android:text="第九种" />
+        <Button
+            android:id="@+id/bt_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_nine"
+            android:text="第十种" />
 
 
     </RelativeLayout>
