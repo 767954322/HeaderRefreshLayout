@@ -21,6 +21,8 @@
         <activity android:name=".type.TwoActivity"/>
         <activity android:name=".type.ThreeActivity"/>
         <activity android:name=".type.FourActivity"/>
+        <activity android:name=".type.FiveActivity"/>
+        <activity android:name=".type.SixActivity"/>
     </application>
 
 </manifest>

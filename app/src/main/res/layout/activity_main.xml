@@ -9,6 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <Button
             android:id="@+id/bt_one"
             android:layout_width="match_parent"
@@ -21,12 +22,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bt_one"
             android:text="第二种" />
+
         <Button
             android:id="@+id/bt_three"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bt_two"
             android:text="第三种" />
+
         <Button
             android:id="@+id/bt_four"
             android:layout_width="match_parent"
@@ -34,6 +37,18 @@
             android:layout_below="@+id/bt_three"
             android:text="第四种" />
 
+        <Button
+            android:id="@+id/bt_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_four"
+            android:text="第五种" />
+        <Button
+            android:id="@+id/bt_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_five"
+            android:text="第六种" />
 
 
     </RelativeLayout>

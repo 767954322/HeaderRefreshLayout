@@ -1,19 +1,14 @@
 package com.homechart.app.smartrefreshlayout.type;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.homechart.app.smartrefreshlayout.R;
-import com.scwang.smartrefresh.header.DropboxHeader;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreater;
-import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreater;
-import com.scwang.smartrefresh.layout.api.RefreshFooter;
-import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.homechart.app.smartrefreshlayout.header.MyMaterialHeader;
+import com.homechart.app.smartrefreshlayout.utils.UIUtils;
+import com.scwang.smartrefresh.header.DeliveryHeader;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
-import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.listener.OnLoadmoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
@@ -21,7 +16,7 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
  * Created by gumenghao on 17/7/10.
  */
 
-public class TwoActivity
+public class FiveActivity
         extends AppCompatActivity
         implements OnRefreshListener,
         OnLoadmoreListener {
@@ -32,11 +27,14 @@ public class TwoActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two);
+        setContentView(R.layout.activity_five);
 
         refreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
-        DropboxHeader header = new DropboxHeader(this);
+        //设置 Header
+        DeliveryHeader header = new DeliveryHeader(this);
         refreshLayout.setRefreshHeader(header);
+        //设置 Footer
+        refreshLayout.setRefreshFooter(new ClassicsFooter(this));
         refreshLayout.setOnRefreshListener(this);
         refreshLayout.setOnLoadmoreListener(this);
     }

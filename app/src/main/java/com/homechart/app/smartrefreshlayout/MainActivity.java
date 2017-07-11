@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.homechart.app.smartrefreshlayout.type.FiveActivity;
 import com.homechart.app.smartrefreshlayout.type.FourActivity;
 import com.homechart.app.smartrefreshlayout.type.OneActivity;
+import com.homechart.app.smartrefreshlayout.type.SixActivity;
 import com.homechart.app.smartrefreshlayout.type.ThreeActivity;
 import com.homechart.app.smartrefreshlayout.type.TwoActivity;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
@@ -55,6 +57,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(MainActivity.this, FourActivity.class);
+                startActivity(intent1);
+            }
+        });
+        findViewById(R.id.bt_five).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, FiveActivity.class);
+                startActivity(intent1);
+            }
+        });
+        findViewById(R.id.bt_six).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, SixActivity.class);
                 startActivity(intent1);
             }
         });
