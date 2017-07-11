@@ -37,7 +37,7 @@ public class FourActivity
         header.setColorSchemeColors(UIUtils.getColor(R.color.bg_b2b2b2));
         refreshLayout.setRefreshHeader(header);
         //设置 Footer 为 球脉冲
-        refreshLayout.setRefreshFooter(new ClassicsFooter(this));
+        //refreshLayout.setRefreshFooter(new ClassicsFooter(this));
         refreshLayout.setOnRefreshListener(this);
         refreshLayout.setOnLoadmoreListener(this);
     }
