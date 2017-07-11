@@ -26,7 +26,6 @@ public class ThreeActivity
         setContentView(R.layout.activity_three);
 
         refreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
-        refreshLayout = (RefreshLayout) findViewById(R.id.refreshLayout);
         refreshLayout.setOnRefreshListener(this);
         refreshLayout.setOnLoadmoreListener(this);
     }
